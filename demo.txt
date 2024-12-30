@@ -1,0 +1,17 @@
+
+
+curl -X POST "http://127.0.0.1:8000/api/upload" \
+     -d "query=Who is Elon musk?" \
+
+curl -X POST "http://127.0.0.1:8000/api/upload" \
+     -d "query=How is the air pollution in the picture?" \
+     -d "image_path=/app/bulb.jpg"
+
+
+curl -X POST "http://127.0.0.1:8000/api/upload" \
+     -d "query=Should i wear a mask or take any precaution?" \
+     -d "image_path=/app/pic.jpg"
+
+
+Note: ./backend is mounted at backend container's /app, so the image_path should be specified like `/app/pic.jpg`
+
